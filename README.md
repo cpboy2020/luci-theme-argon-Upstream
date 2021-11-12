@@ -1,28 +1,32 @@
-# luci-theme-argon ([中文](/README_ZH.md))
+<div align="center">
+  <img src="https://raw.githubusercontent.com/jerrykuku/staff/master/argon_title2.png"  >
+  <h1 align="center">
+    A new LuCI theme for OpenWrt
+  </h1>
+    <h3 align="center">
+    Argon is a clean HTML5 theme for LuCI. Users may<br>setup their own favorite logins, including beautiful<br>pics and customized mp4 videos.<br><br>
+  </h3>
+<a href="/LICENSE">
+    <img src="https://img.shields.io/github/license/jerrykuku/luci-theme-argon?style=flat-square&a=1" alt="">
+  </a>
+  <a href="https://github.com/jerrykuku/luci-theme-argon/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="">
+  </a><a href="https://github.com/jerrykuku/luci-theme-argon/issues/new">
+    <img src="https://img.shields.io/badge/Issues-welcome-brightgreen.svg?style=flat-square">
+  </a><a href="https://github.com/jerrykuku/luci-theme-argon/releases">
+    <img src="https://img.shields.io/github/release/jerrykuku/luci-theme-argon.svg?style=flat-square">
+  </a><a href="hhttps://github.com/jerrykuku/luci-theme-argon/releases">
+    <img src="https://img.shields.io/github/downloads/jerrykuku/luci-theme-argon/total?style=flat-square">
+  </a><a href="https://t.me/jerryk6">
+    <img src="https://img.shields.io/badge/Contact-telegram-blue?style=flat-square">
+  </a> 
+</div>
+<br>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/jerrykuku/staff/master/argon2.gif">
+</div>
 
-[1]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[2]: /LICENSE
-[3]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
-[4]: https://github.com/jerrykuku/luci-theme-argon/pulls
-[5]: https://img.shields.io/badge/Issues-welcome-brightgreen.svg
-[6]: https://github.com/jerrykuku/luci-theme-argon/issues/new
-[7]: https://img.shields.io/badge/release-v2.2.5-blue.svg?
-[8]: https://github.com/jerrykuku/luci-theme-argon/releases
-[9]: https://img.shields.io/github/downloads/jerrykuku/luci-theme-argon/total
-[10]: https://img.shields.io/badge/Contact-telegram-blue
-[11]: https://t.me/jerryk6
-[![license][1]][2]
-[![PRs Welcome][3]][4]
-[![Issue Welcome][5]][6]
-[![Release Version][7]][8]
-[![Release Count][9]][8]
-[![Contact Me][10]][11]
-
-![](/Screenshots/screenshot_pc.jpg)
-![](/Screenshots/screenshot_phone.jpg)
-
-A new Luci theme for LEDE/OpenWRT  
-Argon is a clean HTML5 theme for LuCI. It is based on luci-theme-material and Argon Template  
+<br>English | [简体中文](README_ZH.md)
 
 ## Notice 
 It is strongly recommended to use the Chrome browser. Some new css3 features are used in the theme, and currently only Chrome has the best compatibility.
@@ -32,8 +36,12 @@ FireFox does not enable the backdrop-filter by default, see here for the opening
 v2.x.x Adapt to official mainline snapshot.  
 You can checkout branch 18.06 for OpenWRT 18.06 or lean 19.07.
 
-## 更新日志 2020.09.13 v2.2.5
+## Update Log 2021.10.16 v2.2.9
 
+- 【v2.2.9】Fix the problem that the menu could not pop up in mobile mode  
+- 【v2.2.9】Unify the settings of css spacing  
+- 【v2.2.9】Refactored the code of the login page  
+- 【v2.2.8】Fix the problem that the Minify Css option is turned on when compiling, which causes the frosted glass effect to be invalid and the logo font is lost.  
 - 【v2.2.5】New config app for argon theme. You can set the blur and transparency of the login page of argon theme, and manage the background pictures and videos.[Chrome is recommended] [Download](https://github.com/jerrykuku/luci-app-argon-config/releases/download/v0.8-beta/luci-app-argon-config_0.8-beta_all.ipk)
 - 【v2.2.5】Automatically set as the default theme when compiling.
 - 【v2.2.5】Modify the file structure to adapt to luci-app-argon-config. The old method of turning on dark mode is no longer applicable, please use it with luci-app-argon-config.
@@ -93,9 +101,12 @@ opkg install luci-theme-argon*.ipk
 ### For openwrt official 19.07 Snapshots LuCI master
 
 ```
+opkg install luci-compat
 wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v2.2.5/luci-theme-argon_2.2.5-20200914_all.ipk
 opkg install luci-theme-argon*.ipk
 ```
+![](/Screenshots/screenshot_pc.jpg)
+![](/Screenshots/screenshot_phone.jpg)
 
 ## Thanks to
 
